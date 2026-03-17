@@ -1,58 +1,74 @@
 <div align="center">
 
-<img src="Resources/logo.png" width="120" height="120" alt="BookWriter Logo"/>
+```
+██████╗  ██████╗  ██████╗ ██╗  ██╗    ██╗    ██╗██████╗ ██╗████████╗███████╗██████╗
+██╔══██╗██╔═══██╗██╔═══██╗██║ ██╔╝    ██║    ██║██╔══██╗██║╚══██╔══╝██╔════╝██╔══██╗
+██████╔╝██║   ██║██║   ██║█████╔╝     ██║ █╗ ██║██████╔╝██║   ██║   █████╗  ██████╔╝
+██╔══██╗██║   ██║██║   ██║██╔═██╗     ██║███╗██║██╔══██╗██║   ██║   ██╔══╝  ██╔══██╗
+██████╔╝╚██████╔╝╚██████╔╝██║  ██╗    ╚███╔███╔╝██║  ██║██║   ██║   ███████╗██║  ██║
+╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝     ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+```
 
-# BOOKWRITER
-### `// CYBER-EDITION`
+**`// CYBER-EDITION v1.1`**
 
-**WPF-приложение для писателей с cyberpunk-интерфейсом**
+*десктопное приложение для писателей · Windows · .NET 8 · cyberpunk-интерфейс*
 
-[![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/download/dotnet/8.0)
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-00FFCC?style=flat-square&logo=windows)](https://github.com)
-[![License](https://img.shields.io/badge/license-MIT-FF007A?style=flat-square)](LICENSE)
-[![QuestPDF](https://img.shields.io/badge/export-PDF%20%7C%20EPUB-00AAFF?style=flat-square)](https://www.questpdf.com)
+---
+
+[![.NET 8](https://img.shields.io/badge/■_.NET-8.0-blueviolet?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/download/dotnet/8.0)
+[![Windows](https://img.shields.io/badge/■_Windows-10%2F11-00FFCC?style=for-the-badge&logo=windows&logoColor=black)](https://github.com)
+[![License MIT](https://img.shields.io/badge/■_License-MIT-FF007A?style=for-the-badge)](LICENSE)
+[![QuestPDF](https://img.shields.io/badge/■_Export-PDF%20%7C%20EPUB-00AAFF?style=for-the-badge)](https://www.questpdf.com)
+[![SQLite](https://img.shields.io/badge/■_DB-SQLite-orange?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
 
 </div>
 
 ---
 
-## ⚡ О проекте
-
-**BookWriter** — десктопное приложение для написания книг на Windows, выполненное в стиле cyberpunk. Поддерживает структуру «книга → главы», RTF-редактор с форматированием, экспорт в PDF и EPUB, историю версий и SQLite-библиотеку всех проектов.
-
 ```
- ╔══════════════════════════════════════════╗
- ║  [ CHAPTER LIST ]  [ RTF EDITOR ]        ║
- ║  ──────────────── ────────────────────── ║
- ║  > Глава 1        Lorem ipsum dolor sit  ║
- ║    Глава 2        amet consectetur...    ║
- ║    Глава 3        _                      ║
- ║  ──────────────── ────────────────────── ║
- ║  STATUS: // READY        слов: 12 340    ║
- ╚══════════════════════════════════════════╝
+  ╔══════════════════════════════════════════════════════════════════════╗
+  ║                                                                      ║
+  ║   ┌─────────────────┐  ┌────────────────────────────────────────┐   ║
+  ║   │  [ CHAPTERS ]   │  │          [ RTF EDITOR ]                │   ║
+  ║   │─────────────────│  │────────────────────────────────────────│   ║
+  ║   │ ▶ Глава 01  ●   │  │  Lorem ipsum dolor sit amet,           │   ║
+  ║   │   Глава 02      │  │  consectetur adipiscing elit. Sed do   │   ║
+  ║   │   Глава 03      │  │  eiusmod tempor incididunt ut labore   │   ║
+  ║   │   Глава 04      │  │  et dolore magna aliqua...             │   ║
+  ║   │   + NEW CHAPTER │  │                                        │   ║
+  ║   └─────────────────┘  │  _                                     │   ║
+  ║                         └────────────────────────────────────────┘   ║
+  ║   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
+  ║   STATUS: // READY   ▌  АВТОСОХРАНЕНИЕ: OK   ▌  СЛОВ: 12,340      ║
+  ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## ✨ Возможности
+## `> SYSTEM.FEATURES`
 
-- **RTF-редактор** — жирный, курсив, подчёркивание, заголовки, списки
-- **Экспорт в PDF** — обложка, титульная страница, колонтитулы (QuestPDF)
-- **Экспорт в EPUB 3** — полная структура, NCX + nav, cover.jpg
-- **SQLite-библиотека** — все книги и история версий хранятся в `%APPDATA%\BookWriter\library.db`
-- **Автосохранение** — каждые 2 минуты, незаметно
-- **Редактор обложки** — front + back cover в PNG/JPEG
-- **История версий** — до 50 ревизий на главу
-- **Два варианта темы** — Cyberpunk Cyan и Cyberpunk Pink
-- **Перетаскивание глав** — меняй порядок через кнопки ↑↓
+| МОДУЛЬ | ОПИСАНИЕ | СТАТУС |
+|:-------|:---------|:------:|
+| `RTF_ENGINE` | Жирный · курсив · подчёркивание · заголовки · списки | `[ACTIVE]` |
+| `PDF_EXPORT` | Обложка · титульная · колонтитулы · нумерация · A5 | `[ACTIVE]` |
+| `EPUB3_EXPORT` | NCX + nav · cover.jpg · xhtml на главу · EPUB2/3 | `[ACTIVE]` |
+| `SQLITE_VAULT` | Все книги · история версий · теги · мягкое удаление | `[ACTIVE]` |
+| `AUTOSAVE` | Тихое сохранение каждые 2 минуты · без прерываний | `[ACTIVE]` |
+| `COVER_EDITOR` | Front + back cover · PNG / JPEG | `[ACTIVE]` |
+| `VERSION_CTRL` | До 50 ревизий на главу · откат в один клик | `[ACTIVE]` |
+| `DUAL_THEME` | Cyberpunk Cyan `◈` Cyberpunk Pink | `[ACTIVE]` |
+| `DRAG_ORDER` | Перестановка глав через ↑ ↓ | `[ACTIVE]` |
 
 ---
 
-## 🚀 Быстрый старт
+## `> QUICK.BOOT`
 
 ### Требования
-- Windows 10 / 11 x64
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+
+```
+OS   ─── Windows 10 / 11  (x64)
+SDK  ─── .NET 8           https://dotnet.microsoft.com/download/dotnet/8.0
+```
 
 ### Запуск из исходников
 
@@ -62,106 +78,137 @@ cd BookWriter/BookWriter
 dotnet run
 ```
 
-### Сборка в один `.exe`
+### Сборка в автономный `.exe`
 
 ```bash
-dotnet publish -c Release -r win-x64 \
-  --self-contained true \
-  -p:PublishSingleFile=true \
+dotnet publish -c Release -r win-x64   \
+  --self-contained true                \
+  -p:PublishSingleFile=true            \
   -o ./publish
 ```
 
-Результат: `publish/BookWriter.exe` (~80–120 MB, не требует установки .NET)
+> **Результат:** `publish/BookWriter.exe` — ~80–120 MB, установка .NET не нужна
 
 ---
 
-## 🗂 Структура проекта
+## `> ARCHITECTURE.MAP`
 
 ```
 BookWriter/
-├── App.xaml.cs                 ← инициализация QuestPDF license + SQLite
+│
+├── App.xaml.cs                ◀  QuestPDF license init · SQLite bootstrap
+│
 ├── Models/
-│   ├── Book.cs                 ← книга + настройки (шрифт, размер, язык)
-│   ├── Chapter.cs              ← глава: RTF ↔ FlowDocument, wordcount
-│   └── Cover.cs                ← обложка в байтах
+│   ├── Book.cs                ◀  настройки: шрифт · размер · язык
+│   ├── Chapter.cs             ◀  RTF ↔ FlowDocument · wordcount
+│   └── Cover.cs               ◀  обложка в байтах
+│
 ├── Data/
-│   ├── BookDbContext.cs        ← EF Core + SQLite
-│   ├── BookRepository.cs       ← CRUD
-│   └── DbMigrator.cs           ← EnsureCreated при старте
+│   ├── BookDbContext.cs       ◀  EF Core + SQLite
+│   ├── BookRepository.cs      ◀  CRUD-операции
+│   └── DbMigrator.cs          ◀  EnsureCreated при старте
+│
 ├── Services/
-│   ├── PdfExportService.cs     ← QuestPDF (Community)
-│   ├── EpubExportService.cs    ← ZIP-based EPUB 3
-│   ├── AutoSaveService.cs      ← таймер 2 мин
-│   └── BookProjectService.cs   ← *.bookproject (JSON + Base64 RTF)
+│   ├── PdfExportService.cs    ◀  QuestPDF (Community)
+│   ├── EpubExportService.cs   ◀  ZIP-based EPUB 3
+│   ├── AutoSaveService.cs     ◀  таймер 2 мин
+│   └── BookProjectService.cs  ◀  *.bookproject (JSON + Base64 RTF)
+│
 ├── ViewModels/
-│   ├── MainViewModel.cs        ← команды, экспорт, навигация
-│   └── ChapterViewModel.cs     ← VM одной главы
+│   ├── MainViewModel.cs       ◀  команды · экспорт · навигация
+│   └── ChapterViewModel.cs    ◀  VM одной главы
+│
 ├── Views/
-│   ├── MainWindow.xaml         ← главное окно
-│   ├── CoverEditorWindow.xaml  ← редактор обложки
-│   └── SettingsWindow.xaml     ← параметры книги
+│   ├── MainWindow.xaml        ◀  главное окно
+│   ├── CoverEditorWindow.xaml ◀  редактор обложки
+│   └── SettingsWindow.xaml    ◀  параметры книги
+│
 └── Themes/
-    ├── LightTheme.xaml         ← Cyberpunk Cyan
-    ├── DarkTheme.xaml          ← Cyberpunk Pink
-    └── CommonStyles.xaml       ← кнопки, скроллбары, списки
+    ├── LightTheme.xaml        ◀  Cyberpunk Cyan
+    ├── DarkTheme.xaml         ◀  Cyberpunk Pink
+    └── CommonStyles.xaml      ◀  кнопки · скроллбары · списки
 ```
 
 ---
 
-## 🗄 База данных
+## `> DATABASE.SCHEMA`
 
-Файл: `%APPDATA%\BookWriter\library.db`
+**Файл:** `%APPDATA%\BookWriter\library.db`
 
-| Таблица | Назначение |
-|---|---|
-| `Books` | Все книги (soft-delete) |
-| `Chapters` | Главы с RTF и wordcount |
-| `Covers` | JPEG/PNG обложки в BLOB |
-| `Tags` | Теги с цветом |
-| `BookTags` | Связь книга ↔ тег |
-| `Revisions` | История версий (до 50 на главу) |
-| `AppSettings` | Настройки приложения |
-
----
-
-## 📤 Форматы экспорта
-
-### PDF
-- Библиотека: **QuestPDF** (Community License — бесплатно)
-- Обложка → титульная → главы → задняя обложка
-- Формат A5, нумерация страниц, колонтитулы
-
-### EPUB 3
-- Правильная структура: `mimetype` → `META-INF/container.xml` → `OEBPS/`
-- Каждая глава — отдельный `.xhtml`
-- Совместимость: EPUB 2 (NCX) + EPUB 3 (nav)
-- Обложка как `cover.jpg`
-
-### `.bookproject`
-- JSON-файл с RTF в Base64
-- Портабельный, можно передавать между машинами
+```
+┌──────────────┬────────────────────────────────────────────┐
+│   ТАБЛИЦА    │   НАЗНАЧЕНИЕ                               │
+├──────────────┼────────────────────────────────────────────┤
+│  Books       │  Все книги (soft-delete)                   │
+│  Chapters    │  Главы: RTF-контент + wordcount            │
+│  Covers      │  JPEG/PNG обложки в BLOB                   │
+│  Tags        │  Теги с цветом                             │
+│  BookTags    │  Связь книга ↔ тег (M2M)                   │
+│  Revisions   │  История версий (≤ 50 на главу)            │
+│  AppSettings │  Настройки приложения                      │
+└──────────────┴────────────────────────────────────────────┘
+```
 
 ---
 
-## ⌨ Горячие клавиши
+## `> EXPORT.PROTOCOLS`
 
-| Клавиши | Действие |
-|---|---|
-| `Ctrl+S` | Сохранить |
-| `Ctrl+Shift+S` | Сохранить как... |
-| `Ctrl+O` | Открыть |
-| `Ctrl+N` | Новая книга |
-| `Ctrl+P` | Печать |
-| `Ctrl+B` | Жирный |
-| `Ctrl+I` | Курсив |
-| `Ctrl+U` | Подчёркивание |
+### `// PDF  ──  via QuestPDF (Community, free)`
+
+```
+Pipeline: Обложка → Титульная страница → Главы → Задняя обложка
+Format:   A5  ·  нумерация страниц  ·  верхние и нижние колонтитулы
+```
+
+### `// EPUB 3  ──  ZIP-based, EPUB 2 compatible`
+
+```
+Structure:
+  mimetype
+  META-INF/container.xml
+  OEBPS/
+    content.opf         ← манифест
+    toc.ncx             ← EPUB 2 навигация
+    nav.xhtml           ← EPUB 3 навигация
+    chapter_001.xhtml
+    chapter_002.xhtml
+    ...
+    cover.jpg
+```
+
+### `// .bookproject  ──  портабельный формат`
+
+```
+JSON-файл с RTF-контентом в Base64
+Передаётся между машинами без потери форматирования
+```
 
 ---
 
-## 📦 Зависимости
+## `> HOTKEYS.TABLE`
 
-| Пакет | Версия | Зачем |
-|---|---|---|
+```
+╔══════════════════╦══════════════════════════════╗
+║   КОМАНДА        ║   ДЕЙСТВИЕ                   ║
+╠══════════════════╬══════════════════════════════╣
+║  Ctrl + S        ║  Сохранить                   ║
+║  Ctrl + Shift+S  ║  Сохранить как...            ║
+║  Ctrl + O        ║  Открыть проект              ║
+║  Ctrl + N        ║  Новая книга                 ║
+║  Ctrl + P        ║  Печать                      ║
+╠══════════════════╬══════════════════════════════╣
+║  Ctrl + B        ║  Жирный                      ║
+║  Ctrl + I        ║  Курсив                      ║
+║  Ctrl + U        ║  Подчёркивание               ║
+╚══════════════════╩══════════════════════════════╝
+```
+
+---
+
+## `> DEPENDENCIES`
+
+| ПАКЕТ | ВЕРСИЯ | НАЗНАЧЕНИЕ |
+|:------|:------:|:-----------|
 | `QuestPDF` | 2024.3.4 | PDF-экспорт |
 | `Microsoft.EntityFrameworkCore.Sqlite` | 8.0.4 | SQLite ORM |
 | `Newtonsoft.Json` | 13.0.3 | JSON-сериализация |
@@ -169,25 +216,36 @@ BookWriter/
 
 ---
 
-## 🐛 Changelog
+## `> CHANGELOG`
 
-### v1.1
-- ✅ **EPUB/PDF экспорт** — теперь сохраняются все главы, а не только последняя открытая
-- ✅ **Сохранение проекта** — все несохранённые главы корректно флашатся перед записью
-- ✅ **QuestPDF лицензия** — `LicenseType.Community` прописана в `App.xaml.cs`, popup больше не появляется
+### `v1.1  //  PATCH`
+
+```diff
++ EPUB/PDF EXPORT  — все главы экспортируются корректно (не только последняя)
++ PROJECT SAVE     — несохранённые главы флашатся перед записью на диск
++ QUESTPDF LICENSE — LicenseType.Community в App.xaml.cs, popup устранён
+```
 
 ---
 
-## 📄 Лицензия
+## `> LICENSE`
 
-MIT — делай что хочешь, упомяни автора.
+```
+MIT License — делай что хочешь, упомяни автора.
+```
 
 ---
 
 <div align="center">
 
 ```
-// HAPPY WRITING
+ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+ ░                                                    ░
+ ░          // JACK IN.  START WRITING.               ░
+ ░                                                    ░
+ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
+
+*made with `</love>` and too much coffee · MIT · 2024*
 
 </div>
