@@ -1,0 +1,20 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+publish/
+
+## SQLite DB (user data)
+*.db
+*.db-shm
+*.db-wal
+
+## User project files
+*.bookproject
+
+## OS
+Thumbs.db
+.DS_Store
+desktop.ini

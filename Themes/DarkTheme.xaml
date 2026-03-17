@@ -1,0 +1,34 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- CYBERPUNK NEON — NEON PINK ALT VARIANT -->
+
+    <SolidColorBrush x:Key="WindowBackground"          Color="#0A0510"/>
+    <SolidColorBrush x:Key="SidebarBackground"         Color="#0D071A"/>
+    <SolidColorBrush x:Key="EditorBackground"          Color="#07030E"/>
+    <SolidColorBrush x:Key="ToolbarBackground"         Color="#0D0718"/>
+    <SolidColorBrush x:Key="StatusBarBackground"       Color="#0A0510"/>
+    <SolidColorBrush x:Key="MenuBackground"            Color="#0D0718"/>
+    <SolidColorBrush x:Key="CardBackground"            Color="#120A22"/>
+    <SolidColorBrush x:Key="PanelBackground"           Color="#0E081D"/>
+    <SolidColorBrush x:Key="PrimaryText"               Color="#FFD6F0"/>
+    <SolidColorBrush x:Key="SecondaryText"             Color="#6A3060"/>
+    <SolidColorBrush x:Key="StatusBarText"             Color="#FF007A"/>
+    <SolidColorBrush x:Key="AccentText"                Color="#FF007A"/>
+    <SolidColorBrush x:Key="NeonCyan"                  Color="#00FFCC"/>
+    <SolidColorBrush x:Key="NeonPink"                  Color="#FF007A"/>
+    <SolidColorBrush x:Key="NeonYellow"                Color="#FFE600"/>
+    <SolidColorBrush x:Key="NeonBlue"                  Color="#00AAFF"/>
+    <SolidColorBrush x:Key="NeonPurple"                Color="#BF00FF"/>
+    <SolidColorBrush x:Key="BorderBrush"               Color="#230D30"/>
+    <SolidColorBrush x:Key="SeparatorBrush"            Color="#180820"/>
+    <SolidColorBrush x:Key="NeonBorderDim"             Color="#330022"/>
+    <SolidColorBrush x:Key="SelectionBackground"       Color="#330020"/>
+    <SolidColorBrush x:Key="HoverBackground"           Color="#1A0828"/>
+    <SolidColorBrush x:Key="AccentBrush"               Color="#FF007A"/>
+    <SolidColorBrush x:Key="AccentHoverBrush"          Color="#CC0060"/>
+    <SolidColorBrush x:Key="ChapterSelectedBackground" Color="#FF007A"/>
+    <SolidColorBrush x:Key="ChapterSelectedText"       Color="#0A0510"/>
+    <SolidColorBrush x:Key="ChapterHoverBackground"    Color="#200A30"/>
+
+</ResourceDictionary>
