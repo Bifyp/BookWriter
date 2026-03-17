@@ -15,11 +15,11 @@
 
 ---
 
-[![.NET 8](https://img.shields.io/badge/■_.NET-8.0-blueviolet?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/download/dotnet/8.0)
-[![Windows](https://img.shields.io/badge/■_Windows-10%2F11-00FFCC?style=for-the-badge&logo=windows&logoColor=black)](https://github.com)
-[![License MIT](https://img.shields.io/badge/■_License-MIT-FF007A?style=for-the-badge)](LICENSE)
-[![QuestPDF](https://img.shields.io/badge/■_Export-PDF%20%7C%20EPUB-00AAFF?style=for-the-badge)](https://www.questpdf.com)
-[![SQLite](https://img.shields.io/badge/■_DB-SQLite-orange?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
+[![.NET 8](https://img.shields.io/badge/.NET-8.0-blueviolet?style=for-the-badge&logoColor=white)](https://dotnet.microsoft.com/download/dotnet/8.0)
+[![Windows](https://img.shields.io/badge/Windows-10%2F11-00FFCC?style=for-the-badge&logo=windows&logoColor=black)](https://github.com)
+[![License MIT](https://img.shields.io/badge/License-MIT-FF007A?style=for-the-badge)](LICENSE)
+[![Export](https://img.shields.io/badge/Export-PDF%20%7C%20EPUB-00AAFF?style=for-the-badge)](https://www.questpdf.com)
+[![SQLite](https://img.shields.io/badge/DB-SQLite-F58233?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
 
 </div>
 
@@ -31,7 +31,7 @@
   ║   ┌─────────────────┐  ┌────────────────────────────────────────┐   ║
   ║   │  [ CHAPTERS ]   │  │          [ RTF EDITOR ]                │   ║
   ║   │─────────────────│  │────────────────────────────────────────│   ║
-  ║   │ ▶ Глава 01  ●   │  │  Lorem ipsum dolor sit amet,           │   ║
+  ║   │  Глава 01  ●   │  │  Lorem ipsum dolor sit amet,           │   ║
   ║   │   Глава 02      │  │  consectetur adipiscing elit. Sed do   │   ║
   ║   │   Глава 03      │  │  eiusmod tempor incididunt ut labore   │   ║
   ║   │   Глава 04      │  │  et dolore magna aliqua...             │   ║
