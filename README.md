@@ -28,18 +28,18 @@
 ```
   ╔══════════════════════════════════════════════════════════════════════╗
   ║                                                                      ║
-  ║   ┌─────────────────┐  ┌────────────────────────────────────────┐   ║
-  ║   │  [ CHAPTERS ]   │  │          [ RTF EDITOR ]                │   ║
-  ║   │─────────────────│  │────────────────────────────────────────│   ║
-  ║   │  Глава 01  ●   │  │  Lorem ipsum dolor sit amet,           │   ║
-  ║   │   Глава 02      │  │  consectetur adipiscing elit. Sed do   │   ║
-  ║   │   Глава 03      │  │  eiusmod tempor incididunt ut labore   │   ║
-  ║   │   Глава 04      │  │  et dolore magna aliqua...             │   ║
-  ║   │   + NEW CHAPTER │  │                                        │   ║
-  ║   └─────────────────┘  │  _                                     │   ║
+  ║   ┌─────────────────┐  ┌────────────────────────────────────────┐    ║
+  ║   │  [ CHAPTERS ]   │  │          [ RTF EDITOR ]                │    ║
+  ║   │─────────────────│  │────────────────────────────────────────│    ║
+  ║   │  Глава 01  ●    │  │  Lorem ipsum dolor sit amet,           │    ║
+  ║   │   Глава 02      │  │  consectetur adipiscing elit. Sed do   │    ║
+  ║   │   Глава 03      │  │  eiusmod tempor incididunt ut labore   │    ║
+  ║   │   Глава 04      │  │  et dolore magna aliqua...             │    ║
+  ║   │   + NEW CHAPTER │  │                                        │    ║
+  ║   └─────────────────┘  │  _                                     │    ║
   ║                         └────────────────────────────────────────┘   ║
-  ║   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   ║
-  ║   STATUS: // READY   ▌  АВТОСОХРАНЕНИЕ: OK   ▌  СЛОВ: 12,340      ║
+  ║   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░     ║
+  ║   STATUS: // READY   ▌  АВТОСОХРАНЕНИЕ: OK   ▌  СЛОВ: 12,340         ║
   ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -96,20 +96,20 @@ dotnet publish -c Release -r win-x64   \
 ```
 BookWriter/
 │
-├── App.xaml.cs                ◀  QuestPDF license init · SQLite bootstrap
+├── App.xaml.cs                  QuestPDF license init · SQLite bootstrap
 │
 ├── Models/
-│   ├── Book.cs                ◀  настройки: шрифт · размер · язык
-│   ├── Chapter.cs             ◀  RTF ↔ FlowDocument · wordcount
-│   └── Cover.cs               ◀  обложка в байтах
+│   ├── Book.cs                  настройки: шрифт · размер · язык
+│   ├── Chapter.cs               RTF  FlowDocument · wordcount
+│   └── Cover.cs                 обложка в байтах
 │
 ├── Data/
-│   ├── BookDbContext.cs       ◀  EF Core + SQLite
-│   ├── BookRepository.cs      ◀  CRUD-операции
-│   └── DbMigrator.cs          ◀  EnsureCreated при старте
+│   ├── BookDbContext.cs         EF Core + SQLite
+│   ├── BookRepository.cs        CRUD-операции
+│   └── DbMigrator.cs            EnsureCreated при старте
 │
 ├── Services/
-│   ├── PdfExportService.cs    ◀  QuestPDF (Community)
+│   ├── PdfExportService.cs      QuestPDF (Community)
 │   ├── EpubExportService.cs   ◀  ZIP-based EPUB 3
 │   ├── AutoSaveService.cs     ◀  таймер 2 мин
 │   └── BookProjectService.cs  ◀  *.bookproject (JSON + Base64 RTF)
